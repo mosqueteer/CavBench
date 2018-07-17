@@ -3,27 +3,7 @@ This is a generic and extensible benchmark to compare different protein cavity d
 # How to run?
 In the shell command line, just type:
 
-<font face="Courier New">$ CavBench</font>
-
-        <tr class="js-navigation-item">
-          <td class="icon">
-            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
-            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
-          </td>
-          <td class="content">
-            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="inputTTHints.py" id="c6963efd9f18c234cef6269c58221798-f8d10b5679fb77c99760f7d0fb6bb0ae985d2e12" href="/adobe-type-tools/fontlab-scripts/blob/master/TrueType/inputTTHints.py">inputTTHints.py</a></span>
-          </td>
-          <td class="message">
-            <span class="css-truncate css-truncate-target">
-                  <a data-pjax="true" title="Mark glyphs with fuzzy hints on input.
-Improve log file (and its removal)." class="message" href="/adobe-type-tools/fontlab-scripts/commit/b24cac4d2119eb3e752de9527a06338aac999a74">Mark glyphs with fuzzy hints on input.</a>
-            </span>
-          </td>
-          <td class="age">
-            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-10-27T22:09:38Z">Oct 27, 2016</time-ago></span>
-          </td>
-        </tr>
-        
+<code>$ CavBench</code>
  
 But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
