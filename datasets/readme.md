@@ -5,8 +5,9 @@ The datasets come in two formats, cvv and xml. The former is more compact than t
 The datasets are the following:
 
 *Ground truth* : 
-  CavBench/datasets/ground_truth_csv/
-  CavBench/datasets/ground_truth_xml/
+
+ - CavBench/datasets/ground_truth_csv/
+ - CavBench/datasets/ground_truth_xml/
   
   
   
