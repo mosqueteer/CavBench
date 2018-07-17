@@ -1,12 +1,13 @@
-# CavBench datasets:
+# Download CavBench datasets
 
 The datasets come in two formats, csv and xml. The former is more compact than the latter. 
 These files are large (about 10GB), so they have to be downloaded from:
 
 [CavBench's datasets](https://drive.google.com/drive/folders/1DTBTBwWTr_o7aZkwUw9XtD1Dcgk5740H).
 
+and must be uncompressed within the folder <code>CavBench/datasets/</code>
 
-<href https://drive.google.com/drive/folders/1DTBTBwWTr_o7aZkwUw9XtD1Dcgk5740H
+# CavBench datasets
 
 The datasets are the following:
 
@@ -19,6 +20,27 @@ The datasets are the following:
 
  - CavBench/datasets/kvfinder_csv.zip
  - CavBench/datasets/kvfinder_xml.zip
+ 
+ 
+*GHECOM* : 
+
+ - CavBench/datasets/ghecom_csv.zip
+ - CavBench/datasets/ghecom_xml.zip
+ 
+ 
+*Fpocket* : 
+
+ - CavBench/datasets/fpocket_csv.zip
+ - CavBench/datasets/fpocket_xml.zip
+ 
+ 
+*GaussianFinder* : 
+
+ - CavBench/datasets/gaussian_csv.zip
+ - CavBench/datasets/gaussian_xml.zip
+ 
+ 
+ 
  
  
   
