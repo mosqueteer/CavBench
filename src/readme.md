@@ -1,3 +1,5 @@
+# .cpp Files 
+
 This folder contains the three .cpp files of CavBench:
 
 <code>dummyatompairs.cpp</code> : this file produces the pairs <C,c> that identify the the overlapping dummy atoms between ground-truth cavities (C) and method-specific cavities (c).
@@ -8,5 +10,5 @@ This folder contains the three .cpp files of CavBench:
 
 # Compilation
 
-These three files are compiled by the shell script cavbench.sh in the CavBench root folder.
+These three files are compiled by the shell script <code>cavbench.sh</code> in the CavBench root folder.
 
