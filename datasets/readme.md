@@ -11,30 +11,30 @@ and must be uncompressed within the folder <code>CavBench/datasets/</code>
 
 The datasets are the following:
 
-*Ground truth* : 
+**Ground truth** : 
 
  - CavBench/datasets/ground_truth_csv.zip
  - CavBench/datasets/ground_truth_xml.zip
  
-*KVFinder* : 
+**KVFinder** : 
 
  - CavBench/datasets/kvfinder_csv.zip
  - CavBench/datasets/kvfinder_xml.zip
  
  
-*GHECOM* : 
+**GHECOM** : 
 
  - CavBench/datasets/ghecom_csv.zip
  - CavBench/datasets/ghecom_xml.zip
  
  
-*Fpocket* : 
+**Fpocket** : 
 
  - CavBench/datasets/fpocket_csv.zip
  - CavBench/datasets/fpocket_xml.zip
  
  
-*GaussianFinder* : 
+**GaussianFinder** : 
 
  - CavBench/datasets/gaussian_csv.zip
  - CavBench/datasets/gaussian_xml.zip
