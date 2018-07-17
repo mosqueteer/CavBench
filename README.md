@@ -5,6 +5,8 @@ In the shell command line, just type:
 
 <font face="Courier New">$ CavBench</font>
 
+<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+
 But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
 $ ls -la 
