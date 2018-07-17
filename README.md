@@ -3,7 +3,7 @@ This is a generic and extensible benchmark to compare different protein cavity d
 # How to run?
 In the shell command line, just type:
 
-<font face="verdana">$ CavBench</font>
+<font face="times">$ CavBench</font>
 
 But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
