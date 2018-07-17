@@ -3,7 +3,7 @@
 The datasets come in two formats, csv and xml. The former is more compact than the latter. 
 These files are large (about 10GB), so they have to be downloaded from:
 
-[CavBench's datasets](https://drive.google.com/drive/folders/1DTBTBwWTr_o7aZkwUw9XtD1Dcgk5740H).
+[CavBench's datasets](https://drive.google.com/drive/folders/1DTBTBwWTr_o7aZkwUw9XtD1Dcgk5740H)
 
 and must be uncompressed within the folder <code>CavBench/datasets/</code>
 
