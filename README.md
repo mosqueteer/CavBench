@@ -7,13 +7,13 @@ In the shell command line, just type:
  
 But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
-$ ls -la 
+<code>$ ls -la</code> 
 
 to see the execution permissions. 
 
 If necessary to add execution permissions, please type:
 
-$ chmod +x CavBench.sh
+<code>$ chmod +x CavBench.sh</code> 
 
 
 
