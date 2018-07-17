@@ -5,8 +5,10 @@ In the shell command line, just type:
 
 <font face="Courier New">$ CavBench</font>
 
-<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-
+         <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="inputTTHints.py" id="c6963efd9f18c234cef6269c58221798-f8d10b5679fb77c99760f7d0fb6bb0ae985d2e12" href="/adobe-type-tools/fontlab-scripts/blob/master/TrueType/inputTTHints.py">inputTTHints.py</a></span>
+          </td>
+ 
 But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
 $ ls -la 
