@@ -2,7 +2,7 @@
 #
 #	CavBench - A benchmark to compare protein cavity detection methods
 #
-#  	Copyright (C) 2018 Instituto de Telecomunica›es & University of Beira Interior
+#  	Copyright (C) 2018 Instituto de TelecomunicaÂâ€ºes & University of Beira Interior
 #
 #  	This program is free software: you can redistribute it and/or modify
 #  	it under the terms of the GNU General Public License as published by
@@ -29,10 +29,10 @@ clear
 mypath="$PWD"
 
 # read in the names of protein cavity detection methods in the CavBench dataset
-methods=( `cat "methods.txt" `)
+methods=( `cat "txt/methods.txt" `)
 
 # read in the names of apo and holo proteins in the CavBench dataset
-proteins=( `cat "proteins.txt" `)
+proteins=( `cat "txt/proteins.txt" `)
 
 # initialize the number of apo and holo proteins
 napo=0
@@ -51,17 +51,17 @@ for p in "${proteins[@]}"
 do
 
     	# apoflag takes on the value either 0 (not apo protein) or 1 (apo protein) 
-    apoflag=$(grep -c "$p" apos.txt)
+    apoflag=$(grep -c "$p" txt/apos.txt)
     	# number of apo proteins is being updated
     napo=$((apoflag+napo))
     
     	# holoflag takes on the value either 0 (not holo protein) or 1 (holo protein) 
-    holoflag=$(grep -c "$p" holos.txt)
+    holoflag=$(grep -c "$p" txt/holos.txt)
     	# number of holo proteins is being updated
     nholo=$((holoflag+nholo))
     
     	# get number of cavities $nc of protein $p in the ground truth
-    nc=$(sort -s -n -k 4,4 "$mypath"/datasets/ground_thruth-csv/"$p".csv  |tail -n 1  | awk '{print $NF}')
+    nc=$(sort -s -n -k 4,4 "$mypath"/datasets/ground_thruth_csv/"$p".csv  |tail -n 1  | awk '{print $NF}')
     	# update total number of cavities for either apos or holos
     if [ "$apoflag" -eq 0 ];then
            napocavities=$(( $napocavities + $nc ))
@@ -82,7 +82,7 @@ do
     do
         	# number of cavities (PDBsum clefts + Mole tunnels) in the ground truth 
         	# for the protein $p
-        ngc=$(sort -s -n -k 4,4 "$mypath"/datasets/ground_thruth/csv/csv/"$p".csv  |tail -n 1  | awk '{print $NF}') 
+        ngc=$(sort -s -n -k 4,4 "$mypath"/datasets/ground_thruth_csv/csv/"$p".csv  |tail -n 1  | awk '{print $NF}') 
         ngc=$((ngc+1))
     
         	# number of cavities identified by the method $m for the protein $p
@@ -95,7 +95,7 @@ do
         	# c represents a dummy atom of a method-specific cavity;
         	# This computation is performed using the executable program 
         	# called dummyatompairs.exe whose source code is also in the folder /bin
-        ./bin/dummyatompairs.exe "$mypath"/datasets/ground_thruth/csv/"$p".csv "$mypath"/datasets/"$m"_csv/"$p".csv  >> dummyatompairs_temp.txt
+        ./bin/dummyatompairs.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv "$mypath"/datasets/"$m"_csv/"$p".csv  >> dummyatompairs_temp.txt
         
         	# Remove last line (blank line) of the file
         sed '$d' dummyatompairs_temp.txt > dummyatompairs.txt
@@ -106,7 +106,7 @@ do
         	# Compute overlapping matrix;
         	# This computation is performed using the executable program 
         	# called overlappingmatrix.exe whose source code is also in the folder /bin
-        ./bin/overlappingmatrix.exe "$mypath"/datasets/ground_thruth/csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
+        ./bin/overlappingmatrix.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
         	# store overlapping matrix of protein $p for the method $m 
         mv "$mypath"/temp/overlappingmatrix_temp.txt  "$mypath"/results/overlaping_matrices/"$p"_"$m"_overlappingmatrix.txt
 
