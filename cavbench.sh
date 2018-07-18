@@ -2,7 +2,9 @@
 #
 #	CavBench - A benchmark to compare protein cavity detection methods
 #
-#  	Copyright (C) 2018 Instituto de Telecomunica›es & University of Beira Interior
+#  	Copyright (C) 2018 Instituto de Telecomunicações (www.it.pt)
+#  	Copyright (C) 2018 Universidade da Beira Interior (www.ubi.pt)
+#  	Copyright (C) 2018 INESC-ID, Universidade de Lisboa (www.inesc.pt)
 #
 #  	This program is free software: you can redistribute it and/or modify
 #  	it under the terms of the GNU General Public License as published by
