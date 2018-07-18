@@ -37,10 +37,10 @@ g++ ./src/tp_fp_fn.cpp -o ./bin/tp_fp_fn.exe -Ofast -lm -march=native
 
 
 # read in the names of protein cavity detection methods in the CavBench dataset
-methods=( `cat "txt/methods.txt" `)
+methods=( `cat "./txt/methods.txt" `)
 
 # read in the names of apo and holo proteins in the CavBench dataset
-proteins=( `cat "txt/proteins.txt" `)
+proteins=( `cat "./txt/proteins.txt" `)
 
 # initialize the number of apo and holo proteins
 napo=0
@@ -59,12 +59,12 @@ for p in "${proteins[@]}"
 do
 
     	# apoflag takes on the value either 0 (not apo protein) or 1 (apo protein) 
-    apoflag=$(grep -c "$p" txt/apos.txt)
+    apoflag=$(grep -c "$p" ./txt/apos.txt)
     	# number of apo proteins is being updated
     napo=$((apoflag+napo))
     
     	# holoflag takes on the value either 0 (not holo protein) or 1 (holo protein) 
-    holoflag=$(grep -c "$p" txt/holos.txt)
+    holoflag=$(grep -c "$p" ./txt/holos.txt)
     	# number of holo proteins is being updated
     nholo=$((holoflag+nholo))
     
