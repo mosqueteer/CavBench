@@ -15,5 +15,17 @@ If necessary to add execution permissions, please type:
 
 <code>$ chmod +x cavbench.sh</code> 
 
+# Contributors
+Sérgio Dias : sergioduartedias@sapo.pt
 
+Francisco fernandes: francisco.fernandes@ist.utl.pt 
 
+Tiago Simões : tiagomiguelcs@gmail.com
+
+Ana Mafalda Martins: a.mafalda.martins@gmail.com
+
+Alfredo Ferreira: alfredo.ferreira@ist.utl.pt 
+
+Joaquim Jorge: jaj@inesc.pt 
+
+Abel Gomes: agomes@di.ubi.pt
