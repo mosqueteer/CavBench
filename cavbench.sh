@@ -30,6 +30,12 @@ clear
 # we assume you are in CavBench's root folder
 mypath="$PWD"
 
+#compile the three modules of CavBench
+g++ src/dummyatompairs.cpp -o bin/dummyatompairs.exe -Ofast -lm -march=native 
+g++ src/overlappingmatrix.cpp -o bin/overlapping_matrix.exe -Ofast -lm -march=native 
+g++ src/tp_fp_fn.cpp -o bin/tp_fp_fn.exe -Ofast -lm -march=native 
+
+
 # read in the names of protein cavity detection methods in the CavBench dataset
 methods=( `cat "txt/methods.txt" `)
 
@@ -262,5 +268,6 @@ printf "\n\n" >> "$mypath"/results/csv/results.csv
 #-----------------------------------------------------------------------------------------
 rm -r -f "$mypath"/results/csv/TPFPFN_apo_holo.txt "$mypath"/results/csv/TPFPFN_holo.txt "$mypath"/results/csv/TPFPFN_apo.txt
 rm -r -f  "$mypath"/results/temp/* 
+rm -r -f bin
 
 # end of the file
