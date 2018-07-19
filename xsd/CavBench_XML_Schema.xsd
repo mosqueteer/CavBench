@@ -1,1 +1,102 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- targetNamespace="http://www.cavbench.org" xmlns="http://www.cavbench.org" -->
+
+<!-- definition of "protein" -->
+<xs:element name="protein">
+<xs:complexType>
+<xs:sequence>
+
+    <!-- definition of "cavity" -->
+    <xs:element name="cavity" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>
+    <xs:sequence>
+
+        <!-- definition of "sphere" -->
+        <xs:element name="sphere" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+        <!-- attributes of "sphere" -->
+        <xs:attribute name="radius" default="1.0">
+            <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                <xs:minExclusive value="0.0"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="x" type="xs:decimal" use="required"/>
+        <xs:attribute name="y" type="xs:decimal" use="required"/>
+        <xs:attribute name="z" type="xs:decimal" use="required"/>
+        </xs:complexType>
+        </xs:element>
+        <!-- end of definition of "sphere" -->
+        
+    </xs:sequence>
+    <!-- attributes of "cavity" -->
+    <xs:attribute name="id" use="required">
+        <xs:simpleType>
+            <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="volume" use="required">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0.0"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="numSpheres" use="required">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:enumeration value="cleft"/>
+            <xs:enumeration value="tunnel"/>
+            <xs:enumeration value="pore"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    </xs:complexType>
+    </xs:element>
+    <!-- end of definition of "cavity" -->
+
+</xs:sequence>
+<!-- attributes of "protein" -->
+<xs:attribute name="name" use="required">
+    <xs:simpleType>
+        <xs:restriction base="xs:token">
+        <xs:pattern value="[A-Z0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+<xs:attribute name="volume" default="0.0">
+    <xs:simpleType>
+        <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+<xs:attribute name="numCavities" use="required">
+    <xs:simpleType>
+        <xs:restriction base="xs:nonNegativeInteger">
+        <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+    <!-- set unique key of "cavities" inside "protein" to attribute "id" -->
+    <xs:key name="cavityId"> 
+    <xs:selector xpath="./cavity"/> 
+    <xs:field xpath="@id"/> 
+    </xs:key>
+</xs:element>
+<!-- end of definition of "protein" -->
+
+</xs:schema>
 
