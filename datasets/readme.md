@@ -13,31 +13,31 @@ The datasets are the following:
 
 **Ground truth** : 
 
- - CavBench/datasets/ground_truth_csv.zip
- - CavBench/datasets/ground_truth_xml.zip
+ - ground_truth_csv.zip
+ - ground_truth_xml.zip
  
 **KVFinder** : 
 
- - CavBench/datasets/kvfinder_csv.zip
- - CavBench/datasets/kvfinder_xml.zip
+ - kvfinder_csv.zip
+ - kvfinder_xml.zip
  
  
 **GHECOM** : 
 
- - CavBench/datasets/ghecom_csv.zip
- - CavBench/datasets/ghecom_xml.zip
+ - ghecom_csv.zip
+ - ghecom_xml.zip
  
  
 **Fpocket** : 
 
- - CavBench/datasets/fpocket_csv.zip
- - CavBench/datasets/fpocket_xml.zip
+ - fpocket_csv.zip
+ - fpocket_xml.zip
  
  
 **GaussianFinder** : 
 
- - CavBench/datasets/gaussian_csv.zip
- - CavBench/datasets/gaussian_xml.zip
+ - gaussian_csv.zip
+ - gaussian_xml.zip
  
  
  
