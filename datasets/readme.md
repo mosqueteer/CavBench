@@ -3,7 +3,7 @@
 The datasets come in two formats, csv and xml. The former is more compact than the latter. 
 These files are large, so they have to be downloaded from figshare repository:
 
-[CavBench's datasets](https://figshare.com/authors/Abel_Gomes/7440581)
+[CavBench's datasets](https://figshare.com/articles/CavBench_datasets/9917087)
 
 and must be uncompressed within the folder <code>CavBench/datasets/</code>
 
