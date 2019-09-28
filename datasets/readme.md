@@ -1,7 +1,7 @@
 # Download CavBench datasets
 
 The datasets come in two formats, csv and xml. The former is more compact than the latter. 
-These files are large (about 10GB), so they have to be downloaded from:
+These files are large, so they have to be downloaded from figshare repository:
 
 [CavBench's datasets](https://figshare.com/authors/Abel_Gomes/7440581)
 
